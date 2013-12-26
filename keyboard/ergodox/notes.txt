@@ -1,0 +1,7 @@
+Goals:
+* Media Keys that work on windows
+* Toggle for OSKey/alt when switching between win/mac, ins/fn
+* Add numlock somewhere
+* Sticky keys for modifiers in hardware w/toggle - 3 state or just up/down
+* Macros
+

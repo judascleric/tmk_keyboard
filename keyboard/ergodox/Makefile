@@ -60,7 +60,6 @@ CONFIG_H = config.h
 # MCU name, you MUST set this to match the board you are using
 # type "make clean" after changing this, so all files will be rebuilt
 MCU = atmega32u4
-#MCU = at90usb1286
 
 
 # Processor frequency.
@@ -82,7 +81,7 @@ OPT_DEFS += -DBOOTLOADER_SIZE=512 -DFLASH_SIZE_BYTES=0x8000
 #   comment out to disable the options.
 #
 BOOTMAGIC_ENABLE = yes	# Virtual DIP switch configuration(+1000)
-MOUSEKEY_ENABLE = yes	# Mouse keys(+5000)
+MOUSEKEY_ENABLE = no	# Mouse keys(+5000)
 EXTRAKEY_ENABLE = yes	# Audio control and System control(+600)
 CONSOLE_ENABLE = yes    # Console for debug
 COMMAND_ENABLE = yes    # Commands for debug and configuration
@@ -112,4 +111,6 @@ workman: all
 cub: OPT_DEFS += -DKEYMAP_CUB
 cub: all
 
+jccolemak: OPT_DEFS += -DKEYMAP_JCCOLEMAK
+jccolemak: all
 
